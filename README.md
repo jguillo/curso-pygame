@@ -5,11 +5,11 @@ Se desarrolla un videojuego tipo "marcianitos" paso a paso, incluyendo sonidos y
 
 ## Contenido del proyecto
 - Programación de videojuegos con pygame.pdf: Presentación completa del curso
-- assets: directorio que contiene todos los recursos (imágenes, sonidos, fuentes, etc.) para el desarrollo del videojuego.
-- space-shooter.py: Programa completo del juego
-- 0-ventana.py a 9-sonido.py: Pasos intermedios de implementación del juego, que se referencian en la presentación.
+- **assets**: directorio que contiene todos los recursos (imágenes, sonidos, fuentes, etc.) para el desarrollo del videojuego.
+- **space-shooter.py**: Programa completo del juego
+- **1-ventana.py** a **9-sonido.py**: Pasos intermedios de implementación del juego, que se referencian en la presentación.
   - Cada paso es un programa completo, que añade una funcionalidad respecto del anterior.
-  - El último paso (9-sonido.py) es equivalente al programa completo (space-shooter.py)
+  - El último paso (*9-sonido.py*) es equivalente al programa completo (*space-shooter.py*)
 
 ## Créditos:
 - Gráficos: [Space Shooter Redux](https://kenney.nl/assets/space-shooter-redux) by Kenney Vleugels
