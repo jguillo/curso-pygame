@@ -4,6 +4,8 @@ Material de apoyo para un curso sobre Pygame <https://pygame.org>.
 
 Se desarrolla un videojuego tipo "marcianitos" paso a paso, incluyendo sonidos y música.
 
+![Vista previa](assets/snapshot.png)
+
 ## Contenido del proyecto
 - **Programación de videojuegos con Pygame.pdf**: Presentación completa del curso
 - **assets**: directorio que contiene todos los recursos (imágenes, sonidos, fuentes, etc.) para el desarrollo del videojuego.
