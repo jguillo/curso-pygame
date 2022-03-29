@@ -1,10 +1,11 @@
 # Curso de Programación de Videojuegos con Pygame
 
 Material de apoyo para un curso sobre Pygame <https://pygame.org>.
+
 Se desarrolla un videojuego tipo "marcianitos" paso a paso, incluyendo sonidos y música.
 
 ## Contenido del proyecto
-- **Programación de videojuegos con pygame.pdf**: Presentación completa del curso
+- **Programación de videojuegos con Pygame.pdf**: Presentación completa del curso
 - **assets**: directorio que contiene todos los recursos (imágenes, sonidos, fuentes, etc.) para el desarrollo del videojuego.
 - **space-shooter.py**: Programa completo del juego
 - **1-ventana.py** a **9-sonido.py**: Pasos intermedios de implementación del juego, que se referencian en la presentación.
