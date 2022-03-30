@@ -1,20 +1,20 @@
-import pygame								# Importa el módulo pygame
-import os								    # Importa el módulo os
-import random                               # Importa el módulo random
+import pygame     # Importa el módulo pygame
+import os         # Importa el módulo os
+import random     # Importa el módulo random
 
-pygame.init()                               # Inicializa pygame
+pygame.init()     # Inicializa pygame
 
 # Función para cargar imágenes
 def cargarImagen(imagen):                   
     ruta = os.path.join("assets", imagen)   # Construye la ruta completa
     return pygame.image.load(ruta)          # Carga la imagen y la devuelve
 
-WIDTH = 800  								   # Anchura de la ventana
-HEIGHT = 600 								   # Altura de la ventana
-SHIP_WIDTH = 80
-SHIP_HEIGHT = 54
-VEL_JUGADOR = 10
-VEL_BALAS = 20
+WIDTH = 800            # Anchura de la ventana
+HEIGHT = 600           # Altura de la ventana
+SHIP_WIDTH = 80        # Anchura de la nave
+SHIP_HEIGHT = 54       # Altura de la nave
+VEL_JUGADOR = 10       # Velocidad de la nave
+VEL_BALAS = 20         # Velocidad de las balas
 VEL_ENEMIGO = 5        # Velocidad de los enemigos
 MAX_ENEMIGOS = 6       # Número máximo de enemigos simultáneos
 PROB_ENEMIGO = 40      # Probabilidad de que aparezca un nuevo enemigo
@@ -161,16 +161,16 @@ def dibuja():
 
 
 # Función principal del juego
-def main(): 							
-    esperaEnemigo = 0                   # Tiempo de espera entre enemigos
-    reloj = pygame.time.Clock()         # Reloj para FPS
-    jugando = True 						# Condición del bucle
-    while jugando: 					    # Bucle del juego
+def main():                             
+    esperaEnemigo = 0                    # Tiempo de espera entre enemigos
+    reloj = pygame.time.Clock()          # Reloj para FPS
+    jugando = True                       # Condición del bucle
+    while jugando:                       # Bucle del juego
         
-        for event in pygame.event.get(): 	# Obtiene los eventos y los recorre
+        for event in pygame.event.get(): # Obtiene los eventos y los recorre
             
             if event.type == pygame.QUIT:   # Evento QUIT
-                jugando = False 		    # Salimos del bucle
+                jugando = False             # Salimos del bucle
 
             if event.type == pygame.KEYDOWN:        # Tecla pulsada
                 if event.key == pygame.K_SPACE:     # Espacio
@@ -188,11 +188,11 @@ def main():
         elif esperaEnemigo > 0:  # Estamos en espera
             esperaEnemigo -= 1   # Descuenta del tiempo de espera
        
-        todo.update()                   # actualiza los sprites
-        dibuja()                        # dibuja la pantalla
-        reloj.tick(60)                  # Fuerza FPS
+        todo.update()       # Actualiza los sprites
+        dibuja()            # Dibuja la pantalla
+        reloj.tick(60)      # Fuerza FPS
 
-    pygame.quit() 						# Cerramos pygame
+    pygame.quit()           # Cerramos pygame
 
 
 

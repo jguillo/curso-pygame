@@ -1,18 +1,18 @@
-import pygame								# Importa el módulo pygame
-import os								    # Importa el módulo os
+import pygame      # Importa el módulo pygame
+import os          # Importa el módulo os
 
-pygame.init()                               # Inicializa pygame
+pygame.init()      # Inicializa pygame
 
 # Función para cargar imágenes
 def cargarImagen(imagen):                   
     ruta = os.path.join("assets", imagen)   # Construye la ruta completa
     return pygame.image.load(ruta)          # Carga la imagen y la devuelve
 
-WIDTH = 800  								   # Anchura de la ventana
-HEIGHT = 600 								   # Altura de la ventana
-SHIP_WIDTH = 80
-SHIP_HEIGHT = 54
-VEL_JUGADOR = 10
+WIDTH = 800       # Anchura de la ventana
+HEIGHT = 600      # Altura de la ventana
+SHIP_WIDTH = 80   # Anchura de la nave
+SHIP_HEIGHT = 54  # Altura de la nave
+VEL_JUGADOR = 10  # Velocidad de la nave
 
 # Crea una imagen de fondo con un mosaico de estrellas
 def crearFondo():                      
@@ -80,19 +80,20 @@ def dibuja():
     pygame.display.update()     # Actualiza la pantalla
 
 
-def main(): 							# Función principal
-    reloj = pygame.time.Clock()         # Reloj para FPS
-    jugando = True 						# Condición del bucle
-    while jugando: 					    # Bucle del juego
+def main():                               # Función principal
+    reloj = pygame.time.Clock()           # Reloj para FPS
+    jugando = True                        # Condición del bucle
+    while jugando:                        # Bucle del juego
         
-        for event in pygame.event.get(): 	# Obtiene los eventos y los recorre
-            if event.type == pygame.QUIT:   # Evento QUIT
-                jugando = False 		    # Salimos del bucle
-        nave.update()                   # actualiza la nave
-        dibuja()                        # dibuja la pantalla
-        reloj.tick(60)                  # Fuerza FPS
+        for event in pygame.event.get():  # Obtiene los eventos y los recorre
+            if event.type == pygame.QUIT: # Evento QUIT
+                jugando = False           # Salimos del bucle
 
-    pygame.quit() 						# Cerramos pygame
+        nave.update()                     # actualiza la nave
+        dibuja()                          # dibuja la pantalla
+        reloj.tick(60)                    # Fuerza FPS
+
+    pygame.quit()                         # Cerramos pygame
 
 # Si han ejecutado directamente este archivo, lanzamos main()
 if __name__ == "__main__":
