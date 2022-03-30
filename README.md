@@ -25,6 +25,6 @@ Se desarrolla un videojuego tipo "marcianitos" paso a paso, incluyendo sonidos y
 - Plantilla: [Crafting and Mining](https://slidesgo.com/theme/crafting-and-mining) by SlidesGo
 - Gráficos:
   - [Arcade GUI](https://opengameart.org/content/arcade-gui) by Chasersgaming 
-  - [Pixel Art TV Sprite CC0](https://opengameart.org/content/pixel-art-tv-sprite-cc0) de Denislav 
+  - [Pixel Art TV Sprite CC0](https://opengameart.org/content/pixel-art-tv-sprite-cc0) by Denislav 
 
 
