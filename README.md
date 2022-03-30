@@ -15,8 +15,16 @@ Se desarrolla un videojuego tipo "marcianitos" paso a paso, incluyendo sonidos y
   - El último paso (*9-sonido.py*) es equivalente al programa completo (*space-shooter.py*)
 
 ## Créditos:
+
+## Recursos del juego:
 - Gráficos: [Space Shooter Redux](https://kenney.nl/assets/space-shooter-redux) by Kenney Vleugels
 - Sonidos: [Sci-Fi Sounds](https://kenney.nl/assets/sci-fi-sounds) by Kenney Vleugels
 - Música: [Space Ranger](https://uppbeat.io/track/moire/space-ranger) by Moire
+
+## Recursos de la presentación:
+- Plantilla: [Crafting and Mining](https://slidesgo.com/theme/crafting-and-mining) by SlidesGo
+- Gráficos:
+  - [Arcade GUI](https://opengameart.org/content/arcade-gui) by Chasersgaming 
+  - [Pixel Art TV Sprite CC0](https://opengameart.org/content/pixel-art-tv-sprite-cc0) de Denislav 
 
 
