@@ -23,8 +23,8 @@ def cargarSonido(sonido):
 def iniciarMusica():                   
     ruta = os.path.join("assets", "space-ranger.mp3") 
     pygame.mixer.music.load(ruta)         # Carga la música,
-    pygame.mixer.music.set_volume(0.7)    # ajusta el volumen
-    pygame.mixer.music.play()             # y la reproduce
+    pygame.mixer.music.set_volume(0.7)    # ajusta el volumen (entre 0 y 1)
+    pygame.mixer.music.play(loops=-1)     # y la reproduce de manera continua
 
 WIDTH = 800            # Anchura de la ventana
 HEIGHT = 600           # Altura de la ventana
