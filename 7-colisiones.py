@@ -240,9 +240,8 @@ def main():
         elif esperaEnemigo > 0:  # Estamos en espera
             esperaEnemigo -= 1   # Descuenta del tiempo de espera
        
-        muerte = detectarColisiones()   # Detectar colisiones
-
         todo.update()                   # Actualiza los sprites
+        muerte = detectarColisiones()   # Detectar colisiones
         dibuja()                        # Dibuja la pantalla
 
         if muerte:                      # Si el jugador ha muerto

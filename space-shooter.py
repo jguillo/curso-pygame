@@ -209,21 +209,24 @@ class Marcador(pygame.sprite.Sprite):
     # CONSTRUCTOR
     def __init__(self):
         super().__init__()
-        self.puntos = 0  # Inicia la puntuación
-        self.add(todo)   # Se añade al grupo general
+        self.puntos = 0        # Inicia la puntuación
+        self.actualizarTexto() # Crea el texto
+        self.add(todo)         # Se añade al grupo general
 
-    # Actualiza la imagen del marcador
+    # No necesitamos hacer nada en update
     def update(self):
-        # Crea el texto del marcador
-        self.image = FONT_MARCADOR.render(str(self.puntos), False, COLOR_MARCADOR)
-        self.rect = self.image.get_bounding_rect()
-        # Lo coloca en la esquina superior derecha
-        self.rect.topright = (WIDTH-10, 10)
+        pass
 
-    # Aumenta la puntuación
+    # Aumenta la puntuación y actualiza el texto
     def aumenta(self):
         self.puntos += 1
+        self.actualizarTexto()
 
+    # Crea la imagen con el texto del marcador
+    def actualizarTexto(self):
+        self.image = FONT_MARCADOR.render(str(self.puntos), False, COLOR_MARCADOR)
+        self.rect = self.image.get_bounding_rect()
+        self.rect.topright = (WIDTH-10, 10)
 
 nave = Jugador()      # Crea el sprite jugador
 marcador = Marcador() # Crea el sprite marcador
@@ -339,9 +342,10 @@ def main():
         elif esperaEnemigo > 0:  # Estamos en espera
             esperaEnemigo -= 1   # Descuenta del tiempo de espera
        
+        todo.update()       # Actualiza los sprites
+
         muerte = detectarColisiones()   # Detectar colisiones
 
-        todo.update()       # Actualiza los sprites
         dibuja()            # Dibuja la pantalla
 
         if muerte:          # Si el jugador ha muerto
