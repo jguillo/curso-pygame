@@ -119,7 +119,7 @@ class Enemigo(pygame.sprite.Sprite): # Clase que deriva de Sprite
         # Reduce el tamaño de la imagen
         self.image = pygame.transform.scale(ship, self.rect.size)  
         # Posición horizontal aleatoria en todo el ancho de la ventana
-        self.rect.x = random.uniform(0, WIDTH - self.rect.width)   
+        self.rect.x = random.randint(0, WIDTH - self.rect.width)   
         # Posición vertical por encima del borde superior
         self.rect.y = -self.rect.height                            
         # Velocidad horizontal aleatoria (izquierda, abajo, derecha)
